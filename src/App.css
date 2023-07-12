@@ -2,44 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-.patients-heading,.staff-heading{
-  font-size: 10px;
-  margin: 10px 10px 10px 0;
-  font-weight: 500;
-  color: #00B1B2;
+*{
+  padding: 0%;
+  margin: 0%;
 }
 
-.patients,.staff,.general{
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+.patients-heading,
+.staff-heading {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 10px 10px 10px 0;
+  font-weight: bold;
+  color: #00b2b2;
+}
+
+.patients,
+.staff,
+.general {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 500;
-  color: #F7F8FC;
+  color: #f7f8fc;
   cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
-.links:hover{
-  color: #00B1B2;
+.links:hover {
+  color: #00b1b2;
 }
 
-.links:hover .material-symbols-outlined{
-  scale: 1.1;
+.links:hover .material-symbols-outlined {
+  scale: 1.2;
 }
 
-.left-panel{
-  background: #001E51;
-  width: 180px;
+.left-panel {
+  background: #001e51;
+  width: 200px;
   padding: 20px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  float: left;
 }
 
-.material-symbols-outlined{
-  color: #00B1B2;
+.material-symbols-outlined {
+  color: #00b1b2;
   font-size: 22px;
+}
+
+.logo {
+  background: #001e51;
+  width: 200px;
+  padding: 10px 15px;
+  border-bottom: 2px solid #00b2b250;
+}
+
+.logo h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-symbol{
+  font-size: 30px;
+}
+
+.logo-name{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #f7f8fc;
 }

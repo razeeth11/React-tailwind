@@ -6,21 +6,40 @@
   font-size: 10px;
   margin: 10px 10px 10px 0;
   font-weight: 500;
+  color: #00B1B2;
 }
 
 .patients,.staff,.general{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .links{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   font-weight: 500;
+  color: #F7F8FC;
+  cursor: pointer;
+}
+
+.links:hover{
+  color: #00B1B2;
+}
+
+.links:hover .material-symbols-outlined{
+  scale: 1.1;
+}
+
+.left-panel{
+  background: #001E51;
+  width: 180px;
+  padding: 20px;
+  height: 100vh;
 }
 
 .material-symbols-outlined{
   color: #00B1B2;
+  font-size: 22px;
 }

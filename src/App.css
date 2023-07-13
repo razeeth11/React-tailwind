@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
+  background: #efefef;
 }
 
 .patients-heading,
@@ -55,6 +56,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.left-container{
   float: left;
 }
 
@@ -85,4 +89,68 @@ html {
   font-weight: 500;
   letter-spacing: 3px;
   color: #f7f8fc;
+}
+
+
+/* --------------------dashboard--------------------- */
+
+
+.dashboard{
+  background: rgb(255, 255, 255);
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 50px #ababab62;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border: 1.5px solid #e2e2e2;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+.search .material-symbols-outlined{
+  color: #ababab;
+}
+
+.search input{
+  padding: 4px 10px 4px 15px;
+  font-size: 14px;
+  width: 450px;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.acc-section{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+  cursor: pointer
+}
+
+.acc-section .material-symbols-outlined{
+  font-size: 25px;
+  color: #ababab;
+}
+
+.acc-section .material-symbols-outlined:hover{
+  color: #00b1b2;
+  scale: 1.1;
+}
+
+.acc-section img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
 }

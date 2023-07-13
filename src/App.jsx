@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Styles/App.css";
 import { Dashboard } from "./Dashboard";
 import { LeftPanel } from "./LeftPanel";
 

@@ -146,5 +146,9 @@ function ChartComp() {
   );
 }
 function StatisticsComp() {
-  return <div className="statistics-comp"></div>;
+  return (
+  <div className="statistics-comp">
+    
+  </div>
+  );
 }

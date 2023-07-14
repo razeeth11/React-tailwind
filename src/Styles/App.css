@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   padding: 0%;
   margin: 0%;
 }
@@ -57,7 +57,7 @@ html {
   gap: 20px;
 }
 
-.left-container{
+.left-container {
   float: left;
 }
 
@@ -79,34 +79,32 @@ html {
   gap: 10px;
 }
 
-.logo-symbol{
+.logo-symbol {
   font-size: 30px;
 }
 
-.logo-name{
+.logo-name {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3px;
   color: #f7f8fc;
 }
 
+/* --------------------dashboard nav--------------------- */
 
-/* --------------------dashboard--------------------- */
-
-
-.dashboard{
+.dashboard-nav {
   background: rgb(255, 255, 255);
 }
 
-.search-bar{
+.search-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  box-shadow: 0.5px 0.5px 50px #ababab62;
+  box-shadow: 0.5px 0.5px 50px #d6d6d662;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -115,42 +113,179 @@ html {
   margin-left: 20px;
 }
 
-.search .material-symbols-outlined{
+.search .material-symbols-outlined,.acc-section .material-symbols-outlined {
   color: #ababab;
+  font-size: 25px;
 }
 
-.search input{
+.search input {
   padding: 4px 10px 4px 15px;
   font-size: 14px;
   width: 450px;
 }
 
-.search input:focus{
+.search input:focus {
   outline: none;
 }
 
-.acc-section{
+.acc-section {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-right: 20px;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.acc-section .material-symbols-outlined{
-  font-size: 25px;
-  color: #ababab;
-}
-
-.acc-section .material-symbols-outlined:hover{
+.acc-section .material-symbols-outlined:hover {
   color: #00b1b2;
   scale: 1.1;
 }
 
-.acc-section img{
+.acc-section img {
   width: 25px;
   height: 25px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+/* ------------------------------dashboard------------------ */
+
+.main-dashboard-comp {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 25px;
+}
+
+.add-task-comp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 15px;
+  border: 1.5px solid #d1d1d1;
+  width: 230px;
+  background-color: #f7f8fc;
+  border-radius: 3px;
+}
+
+.add-task-arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ababab;
+}
+
+.add-task-arrow span {
+  font-weight: 600;
+}
+
+.add-task-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.add-task-profit {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.percentage {
+  color: #00b2b2;
+  margin-right: 10px;
+}
+
+.add-task-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #f7f8fc;
+  background: #00b2b2;
+  padding: 25px;
+  width: 240px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.data-saver {
+  transition: transform 0.5s ease-in-out;
+}
+
+.add-task-button:hover .data-saver {
+  transform: rotate(360deg);
+  scale: 1.2;
+}
+
+.add-task-button:hover {
+  background: #008c8c;
+}
+
+.data-saver {
+  color: #f7f8fc;
+  font-size: 30px;
+}
+
+/* ------------------------------------ chart comp ---------- */
+
+
+.chart-comp{
+  display: flex;
+  align-items: flex-start;
+}
+
+.doc-comp {
+  float: left;
+  border: 1.5px solid #d6d6d6;
+  width: 400px;
+  margin-left: 25px;
+  background-color: #f7f8fc;
+}
+
+.doctors-comp {
+  padding: 10px 15px;
+  border-bottom: 1.5px solid #d6d6d6;
+}
+
+.doc-head-comp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.chief,
+.docs,
+.nurses,
+.orderlies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+.right-doc img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.left-doc p:nth-child(2){
+  color: #ababab;
+}
+
+.graph-chart-comp{
+  margin-left: 25px;
+  border: 1.5px solid #d6d6d6;
+  float: left;
+  width: 580px;
+  height: 240px;
 }
 

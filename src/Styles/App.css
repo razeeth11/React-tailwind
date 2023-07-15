@@ -51,7 +51,7 @@ html {
   background: #001e51;
   width: 200px;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -98,7 +98,7 @@ html {
 
 .search-bar {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
   box-shadow: 0.5px 0.5px 50px #d6d6d662;
@@ -110,7 +110,7 @@ html {
   padding-left: 10px;
   border: 1.5px solid #e2e2e2;
   border-radius: 2px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .search .material-symbols-outlined,.acc-section .material-symbols-outlined {
@@ -154,14 +154,14 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px , 1fr));
   gap: 10px;
-  padding: 25px;
+  padding: 20px;
 }
 
 .add-task-comp {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 10px 15px;
+  justify-content: space-between;
+  padding: 10px;
   border: 1.5px solid #d1d1d1;
   width: 230px;
   background-color: #f7f8fc;
@@ -237,14 +237,18 @@ html {
 
 .doc-comp {
   border: 1.5px solid #d6d6d6;
-  margin-left: 25px;
+  margin-left: 20px;
   min-width: 250px;
   background-color: #f7f8fc;
   flex: 1;
 }
 
+.chart-graph{
+  width: 100%;
+}
+
 .graph-chart-comp{
-  margin-left: 25px;
+  margin-left: 20px;
   border: 1.5px solid #d6d6d6;
   float: left;
   height: 240px;
@@ -291,4 +295,27 @@ html {
 }
 
 
+/* ------------------statistics comp------------------ */
 
+.statistics-comp{
+  float: left;
+  margin: 20px;
+  width: 80%;
+  border: 1.5px solid #ababab;
+}
+
+.statistics-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+td,th{
+  padding: 4px;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+}

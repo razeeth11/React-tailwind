@@ -301,18 +301,35 @@ html {
   float: left;
   margin: 20px;
   width: 80%;
-  border: 1.5px solid #ababab;
+  border: 1.5px solid #d1d1d1;
+  background: #f7f8fc;
 }
 
 .statistics-head{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding: 10px 15px 0 15px;
 }
 
-td,th{
-  padding: 4px;
+.statistics-title{
+  font-size: 14px;
+}
+
+td{
+  padding: 5px 15px;
+}
+
+tr > td:nth-child(1),.statistics-view{
+  color: #00b2b2;
+  font-weight: bold;
+}
+
+th{
+  padding: 10px 15px;
+  margin: 0;
+  color: #ababab;
+  border-bottom: 1.5px solid #d6d6d6;
 }
 
 table{

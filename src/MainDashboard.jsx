@@ -153,64 +153,7 @@ function StatisticsComp() {
         <p className="statistics-view">View all</p>
       </div>
       <div className="statistics-table-data">
-        <table>
-          <thead>
-            <tr>
-              <th>Order Number</th>
-              <th>Name</th>
-              <th>Serial Number</th>
-              <th>Date</th>
-              <th>Volume</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12346</td>
-              <td>Ophthalmosurgery</td>
-              <td>JD441</td>
-              <td>12 Feb 2023, 12:30</td>
-              <td>
-                <input type="range" value="35" class="slider" />
-              </td>
-            </tr>
-            <tr>
-              <td>24645</td>
-              <td>Opthalogy</td>
-              <td>GER51</td>
-              <td>12 Feb 2023, 12:30</td>
-              <td>
-                <input type="range" value="69" class="slider" />
-              </td>
-            </tr>
-            <tr>
-              <td>44556</td>
-              <td>Day Hospital</td>
-              <td>GRE23</td>
-              <td>12 Feb 2023, 12:30</td>
-              <td>
-                <input type="range" value="40" class="slider" />
-              </td>
-            </tr>
-            <tr>
-              <td>44555</td>
-              <td>Reception Department</td>
-              <td>JYM33</td>
-              <td>12 Feb 2023, 12:30</td>
-              <td>
-                <input type="range" value="20" class="slider" />
-              </td>
-            </tr>
-            <tr>
-              <td>81641</td>
-              <td>Laser Department</td>
-              <td>UYO23</td>
-              <td>12 Feb 2023, 12:30</td>
-              <td>
-                <input type="range" value="90" class="slider" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        
       </div>
     </div>
   );
